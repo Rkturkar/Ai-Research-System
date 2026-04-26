@@ -15,7 +15,7 @@ beautifulsoup4>=4.12.3
 requests>=2.32.3
 lxml>=5.2.2
 
-# Environment variables
+# Environment variables 
 python-dotenv>=1.0.1
 
 # Async support & HTTP clients
@@ -43,3 +43,29 @@ ipykernel>=6.29.5
 # FastAPI (if you expose this as API later)
 fastapi>=0.111.0
 uvicorn>=0.30.1
+
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# ── LangChain ─────────────────────────────────────────────────────────────────
+langchain==0.3.25
+langchain-core==0.3.52
+langchain-groq==0.3.2
+langgraph==0.4.1
+
+# ── LLM / AI ──────────────────────────────────────────────────────────────────
+groq==0.28.0
+
+# ── Search & Scraping ─────────────────────────────────────────────────────────
+tavily-python==0.5.1
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# ── Data / Utilities ──────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.7.4
+
+# ── Serper image search uses requests (already above) ─────────────────────────
+# No extra package needed — Serper API is called via requests.post()

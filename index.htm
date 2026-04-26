@@ -15,7 +15,7 @@
   <header>
     <a class="logo" href="#">
       <div class="logo-icon">
-        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 18 18" fill="none">
           <circle cx="9" cy="9" r="3.5" fill="white"/>
           <circle cx="9" cy="2" r="1.5" fill="white" opacity=".5"/>
           <circle cx="9" cy="16" r="1.5" fill="white" opacity=".5"/>
@@ -34,18 +34,14 @@
     <h1>Intelligent research,<br><em>instantly.</em></h1>
     <p class="hero-sub">
       Ask any research question and get a structured,
-      AI-generated report with sources and expert analysis.
+      AI-generated report with images, sources and expert analysis.
     </p>
 
-    <!-- Search box -->
     <div class="search-wrap">
       <div class="search-box">
-        <input
-          id="topicInput"
-          type="text"
+        <input id="topicInput" type="text"
           placeholder="e.g. Quantum computing breakthroughs in 2025…"
-          autocomplete="off"
-        />
+          autocomplete="off"/>
         <button class="search-btn" id="searchBtn">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <circle cx="6" cy="6" r="4.5" stroke="white" stroke-width="1.5"/>
@@ -54,8 +50,6 @@
           <span class="btn-label">Search</span>
         </button>
       </div>
-
-      <!-- Example chips -->
       <div class="examples">
         <span class="chip" data-topic="LLM agents 2025">LLM agents 2025</span>
         <span class="chip" data-topic="CRISPR gene editing">CRISPR gene editing</span>
@@ -65,10 +59,10 @@
     </div>
   </section>
 
-  <!-- ── Main content ── -->
+  <!-- ── Main ── -->
   <main>
 
-    <!-- Error banner -->
+    <!-- Error -->
     <div class="error-box" id="errorBox">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <circle cx="8" cy="8" r="7" stroke="#c53030" stroke-width="1.5"/>
@@ -77,7 +71,7 @@
       <span id="errorMsg"></span>
     </div>
 
-    <!-- Loading / pipeline animation -->
+    <!-- Loading pipeline — now 5 orbs -->
     <div class="loading-state" id="loadingState">
       <div class="loading-orbs">
         <div class="orb-track">
@@ -98,6 +92,11 @@
         <div class="orb-track">
           <div class="orb" id="orb-critic">🧐</div>
           <div class="orb-label" id="lbl-critic">critic</div>
+        </div>
+        <div class="orb-line" id="line-4"></div>
+        <div class="orb-track">
+          <div class="orb" id="orb-images">🖼️</div>
+          <div class="orb-label" id="lbl-images">images</div>
         </div>
       </div>
       <div class="loading-msg" id="loadingMsg">
@@ -141,6 +140,18 @@
       </div>
     </div>
 
+    <!-- ── Image Section ── -->
+    <div class="image-section" id="imageSection" style="display:none">
+      <div class="image-section-header">
+        <div class="image-section-title">
+          <span class="image-section-icon">🖼️</span>
+          Related Images
+        </div>
+        <span class="image-section-tag">via Google Images</span>
+      </div>
+      <div class="image-grid" id="imageGrid"></div>
+    </div>
+
     <!-- Empty state -->
     <div class="empty-state" id="emptyState">
       <div class="empty-grid">
@@ -180,13 +191,14 @@
 
   </main>
 
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer>
     <span>@Ritik Turkar</span>
-    <span class="footer-dot">·</span>
+    <span class="footer-dot">-</span>
     <span>Gen AI Engineer</span>
-    <span class="footer-dot">·</span>
-    <span></span>
+    <a href="https://www.linkedin.com/in/ritik-turkar-209512378" target="_blank">
+      <img class="limg" src="linkedin.png" alt="LinkedIn"/>
+    </a>
   </footer>
 
   <script src="app.js"></script>
