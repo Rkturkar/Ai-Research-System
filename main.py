@@ -5,8 +5,8 @@ from pydantic import BaseModel
 import json, asyncio, uuid
 from dotenv import load_dotenv
 
-from Backend.tool import web_search, scrape_url, search_images
-from Backend.agent import build_search_agent, build_reader_agent, writer_chain, critic_chain
+from tool import web_search, scrape_url, search_images
+from agent import build_search_agent, build_reader_agent, writer_chain, critic_chain
 
 load_dotenv()
 
