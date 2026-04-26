@@ -1,0 +1,31 @@
+# ── LangChain Ecosystem ─────────────────
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langchain-groq
+langgraph
+
+# ── LLM ────────────────────────────────
+groq
+
+# ── Search & Scraping ─────────────────
+tavily-python
+requests
+beautifulsoup4
+lxml
+
+# ── Backend (FastAPI) ─────────────────
+fastapi
+uvicorn
+
+# ── Utilities ─────────────────────────
+python-dotenv
+pydantic
+httpx
+aiohttp
+tqdm
+rich
+
+# ── Tokenization ──────────────────────
+tiktoken
