@@ -4,7 +4,7 @@
 
 'use strict';
 
-const API = 'http://127.0.0.1:8000';
+const API = 'https://ai-research-system-svg8.onrender.com';
 let currentTopic  = '';
 let startTime     = null;
 let timerInterval = null;
