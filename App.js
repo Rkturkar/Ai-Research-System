@@ -4,7 +4,7 @@
 
 'use strict';
 
-const API = 'https://ai-backend-u63u.onrender.com';
+const API = 'https://ai-backend-7ank.onrender.com';
 let currentTopic  = '';
 let startTime     = null;
 let timerInterval = null;
